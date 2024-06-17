@@ -25,9 +25,9 @@ class _UpDateState extends State<UpDate> {
             child:
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
               ElevatedButton(
-                  style:  ButtonStyle(
-                  
-                       backgroundColor: MaterialStateProperty.all<Color>(Colors.blueAccent),
+                  style: ButtonStyle(
+                    backgroundColor:
+                        MaterialStateProperty.all<Color>(Colors.blueAccent),
                   ),
                   onPressed: () {
                     //launchUrl('https://www.google.com' as Uri);
@@ -35,14 +35,19 @@ class _UpDateState extends State<UpDate> {
                     // ignore: deprecated_member_use
                     launch('tel:+222 42177047');
                   },
-                  child: const Text('Call')),
+                  child: Text(
+                      style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
+                          foreground: Paint()..color = Colors.black),
+                      'Call')),
               const SizedBox(
                 height: 25,
               ),
               ElevatedButton(
-                  style:  ButtonStyle(
-                
-                        backgroundColor: MaterialStateProperty.all<Color>(Colors.blueAccent),
+                  style: ButtonStyle(
+                    backgroundColor:
+                        MaterialStateProperty.all<Color>(Colors.blueAccent),
                   ),
                   onPressed: () {
                     //launchUrl('https://www.google.com' as Uri);
@@ -51,14 +56,19 @@ class _UpDateState extends State<UpDate> {
                     launch(
                         'sms:+22242177047?body=Bonjour Je veut change mon email ou numero de tel');
                   },
-                  child: const Text('Send SMS')),
+                  child: Text(
+                      style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
+                          foreground: Paint()..color = Colors.black),
+                      'Send SMS')),
               const SizedBox(
                 height: 25,
               ),
               ElevatedButton(
-                  style:  ButtonStyle(
-                  
-                      backgroundColor: MaterialStateProperty.all<Color>(Colors.blueAccent),
+                  style: ButtonStyle(
+                    backgroundColor:
+                        MaterialStateProperty.all<Color>(Colors.blueAccent),
                   ),
                   onPressed: () {
                     //launchUrl('https://www.google.com' as Uri);
@@ -66,7 +76,12 @@ class _UpDateState extends State<UpDate> {
                     // ignore: deprecated_member_use
                     launch('mailto:yenjahsidina123@gmail.com?subject=change');
                   },
-                  child: const Text('Send email')),
+                  child: Text(
+                      style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
+                          foreground: Paint()..color = Colors.black),
+                      'Send email')),
             ]),
           ),
         ));

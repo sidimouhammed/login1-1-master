@@ -278,7 +278,12 @@ class _RectlmationState extends State<Rectlmation> {
                               ],
                             ));
                   },
-                  child: Text('Envoie ')),
+                  child: Text(
+                      style: TextStyle(
+                          fontSize: 19,
+                          fontWeight: FontWeight.bold,
+                          foreground: Paint()..color = Colors.black),
+                      'Envoie ')),
             ),
           ],
         ),
@@ -307,9 +312,7 @@ class _RectlmationState extends State<Rectlmation> {
   final credential = FirebaseAuth.instance.currentUser;
   Future addDataToSave(String semester, reclemationExamen, String nomMat,
       String note, String descrp, valide, now, etat) async {
-    await FirebaseFirestore.instance
-        .collection('reclemations')
-        .add({
+    await FirebaseFirestore.instance.collection('reclemations').add({
       'semester': semester,
       'reclemationDeExamen': reclemationExamen,
       'nomMatiere': nomMat,

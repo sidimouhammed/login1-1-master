@@ -210,14 +210,18 @@ class _ProfileState extends State<Profile> {
                                         ],
                                       ));
                             },
-                            child: const Text('Contact Admin'),
+                            child: Text(
+                                style: TextStyle(
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.bold,
+                                    foreground: Paint()..color = Colors.black),
+                                'Contact Admin'),
                           ),
                         ),
                         const SizedBox(height: 10),
                         SizedBox(
                           width: double.maxFinite,
-                        
-                          child:  ElevatedButton(
+                          child: ElevatedButton(
                             onPressed: () {
                               showCupertinoDialog<void>(
                                   context: context,
@@ -245,13 +249,18 @@ class _ProfileState extends State<Profile> {
                                                   context,
                                                   MaterialPageRoute(
                                                       builder: (context) =>
-                                                           ForgotPassword ()));
+                                                          ForgotPassword()));
                                             },
                                           ),
                                         ],
                                       ));
                             },
-                            child: const Text('change password'),
+                            child: Text(
+                                style: TextStyle(
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.bold,
+                                    foreground: Paint()..color = Colors.black),
+                                'Change password'),
                           ),
                         )
                       ],

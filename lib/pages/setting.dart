@@ -45,12 +45,33 @@ class _SettingState extends State<Setting> {
         const AboutListTile(
           icon: Icon(Icons.info),
           //applicationIcon: FlutterLogo(),
-          applicationName: "App",
+          applicationName: "Us",
           applicationVersion: 'version 2.0.1',
-          applicationLegalese:
-              'Copyright © 2024 | ISCAE Tous droits réservés .',
+          // applicationLegalese:
+          //     'Copyright © 2024 | ISCAE Tous droits réservés .',
           aboutBoxChildren: const [
-            Text('this application created by Sidi Med, Tk, Yenj ')
+            Column(
+              children: [
+                Text(
+                    style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                    'This Application Developped By : '),
+                Text(
+                    style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                    'Mohamed Yenj'),
+                Text(
+                    style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                    'Sidi Mohamed'),
+                Text(
+                    style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                    'Taleb Khaiyar'),
+              ],
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Text(
+                style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+                'Copyright © 2024 | ISCAE Tous droits réservés .'),
           ],
         ),
         ListTile(
